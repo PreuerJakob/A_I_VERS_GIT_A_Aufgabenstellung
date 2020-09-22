@@ -33,8 +33,6 @@ public class REST_Git_Ueubung2209 {
 @Produces(MediaType.TEXT_PLAIN)
 public int number(){
     int i = 68;
-     
-    
     return i ;
     
 }
