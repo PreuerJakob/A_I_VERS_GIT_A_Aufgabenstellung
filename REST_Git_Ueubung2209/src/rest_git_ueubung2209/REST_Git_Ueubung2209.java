@@ -19,6 +19,7 @@ public class REST_Git_Ueubung2209 {
         System.out.println("Hello Jakob");
         
         System.out.println("hallo");
+        System.out.println("test");
     }
 
 }
