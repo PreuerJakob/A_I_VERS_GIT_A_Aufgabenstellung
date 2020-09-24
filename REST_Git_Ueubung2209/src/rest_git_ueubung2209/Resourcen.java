@@ -17,7 +17,7 @@ import javax.ws.rs.core.MediaType;
 @Path("Zahlen")
 public class Resourcen {
 @GET
-@Path("Zahl")
+@Path("Test")
 @Produces(MediaType.TEXT_PLAIN)
 public String number(){
     //int i = 68;
