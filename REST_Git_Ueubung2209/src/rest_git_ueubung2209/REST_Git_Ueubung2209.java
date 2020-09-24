@@ -33,14 +33,14 @@ public class REST_Git_Ueubung2209 {
     public static void main(String[] args) throws IOException {
         HttpServer server = HttpServerFactory.create("http://localhost:8080/heart");
         server.start();
-        while (true) {            
-            System.out.println("Beendenn? yes/no");
-            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            String ja = br.readLine();
-            if (ja.compareTo("yes") == 0) {
-                break;
-            }
-        }
-        System.exit(1);
-}
+    }
+
+    @GET
+    @Path("Zahl")
+    @Produces(MediaType.TEXT_PLAIN)
+    public int number() {
+        int i = 68;
+        return i;
+    }
+
 }
