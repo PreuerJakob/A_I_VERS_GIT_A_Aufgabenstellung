@@ -7,15 +7,7 @@ package rest_git_ueubung2209;
 
 import com.sun.jersey.api.container.httpserver.HttpServerFactory;
 import com.sun.net.httpserver.HttpServer;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Timer;
-import javafx.scene.media.Media;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
 
 /**
  *
@@ -34,13 +26,4 @@ public class REST_Git_Ueubung2209 {
         HttpServer server = HttpServerFactory.create("http://localhost:8080/heart");
         server.start();
     }
-
-    @GET
-    @Path("Zahl")
-    @Produces(MediaType.TEXT_PLAIN)
-    public int number() {
-        int i = 68;
-        return i;
-    }
-
 }

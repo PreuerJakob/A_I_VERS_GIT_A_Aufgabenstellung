@@ -21,8 +21,7 @@ public class Resourcen {
     @Path("Test")
     @Produces(MediaType.TEXT_PLAIN)
     public String number() {
-        //int i = 68;
-        return "Hello World";
-
+        int rand = (int) (Math.random() * 100);
+        return rand + "";
     }
 }
